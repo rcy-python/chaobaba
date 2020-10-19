@@ -56,5 +56,6 @@ def indentok(request,user):
     all_price = order.get("all_price")
     content = {"name":name,"car_all":car_all,"order_id":order_id,"user":user,"all_price":all_price}
     return render(request,'indent ok.html',content)
-
+def out(requesst):
+    return (requesst)
 
