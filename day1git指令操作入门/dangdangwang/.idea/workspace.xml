@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ca2372f-d921-4216-95b7-40c5a12bdb07" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hBHqMxvNB0V3c3KolxkbFBONu1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/shixun/练习代码/练习代码/11面向对象的三个特性/课后作业.py" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\static\images" />
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\MEDIA\images" />
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\static\js" />
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang" />
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\templates" />
+      <recent name="E:\基地实训\练习代码\练习代码\27django\dangdangwang\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.dangdangwang">
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="dangdangwang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/order" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/order/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dangdangwang" type="Python.DjangoServer" factoryName="Django server">
+      <module name="dangdangwang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="dangdangwang.settings" />
+      </envs>
+      <option name="SDK_HOME" value="E:\shixun\02 python web\Django-Virtual-Env\Test\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="0.0.0.0" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ca2372f-d921-4216-95b7-40c5a12bdb07" name="Default Changelist" comment="" />
+      <created>1599477754588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599477754588</updated>
+      <workItem from="1599477758348" duration="22763000" />
+      <workItem from="1599614962287" duration="23315000" />
+      <workItem from="1599697291536" duration="19707000" />
+      <workItem from="1599733678537" duration="12515000" />
+      <workItem from="1599785684202" duration="32831000" />
+      <workItem from="1599883717815" duration="8737000" />
+      <workItem from="1599894630290" duration="9433000" />
+      <workItem from="1599904994527" duration="3014000" />
+      <workItem from="1599963250078" duration="40130000" />
+      <workItem from="1600130023381" duration="36300000" />
+      <workItem from="1600215549469" duration="34173000" />
+      <workItem from="1600302391755" duration="1901000" />
+      <workItem from="1600304327563" duration="8214000" />
+      <workItem from="1600611541473" duration="118000" />
+      <workItem from="1600613641512" duration="1007000" />
+      <workItem from="1600648048971" duration="6586000" />
+      <workItem from="1600738949362" duration="4341000" />
+      <workItem from="1600849873218" duration="24000" />
+      <workItem from="1601626817930" duration="705000" />
+      <workItem from="1601633021389" duration="338000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600304658929">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1600304658929" />
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600226705453">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1600226705453" />
+    <state x="626" y="280" width="719" height="584" key="#xdebugger.evaluate" timestamp="1600305970600">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="626" y="280" width="719" height="584" key="#xdebugger.evaluate/0.0.1536.864@0.0.1536.864" timestamp="1600305970600" />
+    <state x="79" y="163" width="1350" height="678" key="DiffContextDialog" timestamp="1599744076354">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="79" y="163" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1599744076354" />
+    <state x="549" y="190" key="FileChooserDialogImpl" timestamp="1600257755486">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1600257755486" />
+    <state width="1493" height="142" key="GridCell.Tab.0.bottom" timestamp="1601629255645">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="142" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601629255645" />
+    <state width="1493" height="142" key="GridCell.Tab.0.center" timestamp="1601629255645">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="142" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601629255645" />
+    <state width="1493" height="142" key="GridCell.Tab.0.left" timestamp="1601629255645">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="142" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601629255645" />
+    <state width="1493" height="142" key="GridCell.Tab.0.right" timestamp="1601629255645">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="142" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601629255645" />
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom" timestamp="1600316842167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1600316842167" />
+    <state width="1493" height="245" key="GridCell.Tab.1.center" timestamp="1600316842167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1600316842167" />
+    <state width="1493" height="245" key="GridCell.Tab.1.left" timestamp="1600316842167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1600316842167" />
+    <state width="1493" height="245" key="GridCell.Tab.1.right" timestamp="1600316842167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1600316842167" />
+    <state width="775" height="439" key="XDebugger.FullValuePopup" timestamp="1600305549451">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="775" height="439" key="XDebugger.FullValuePopup/0.0.1536.864@0.0.1536.864" timestamp="1600305549451" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1600849872011">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1600849872011" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1600304477562">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1600304477562" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dangdangwang$views.coverage" NAME="views Coverage Results" MODIFIED="1600305243163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
+  </component>
+</project>
