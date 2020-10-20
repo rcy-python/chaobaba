@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="liuyanban">
+    <input type="text" v-model="msg">
+    <input type="button" value="提交留言" @click="add_note">
+
+    <ul>
+        <li v-for="(note,index) in notes" :key="index">
+           <span >{{note}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" @click="delete_one(index)">删除</a>
+        </li>
+    </ul>
+    <span>共有{{notes.length}}条留言</span> &nbsp;&nbsp;&nbsp;<input type="button" value="删除所有" @click="delete_all" v-show="isshow">
+</div>
+<script>
+    new Vue({
+        el:"#liuyanban",
+        data:{
+            notes:["python真好学","Vue很方便","牛逼"],
+            msg:"",
+            isshow:true,
+        },
+        methods:{
+            add_note(){
+                if(this.msg){
+                    this.notes.unshift(this.msg);
+                    this.msg="";
+                    this.isshow=true
+                }
+
+            },
+            delete_one(index){
+                this.notes.splice(index,1);
+                if(this.notes.length===0){
+                    this.isshow=false;
+                }
+            },
+            delete_all(){
+                this.notes.splice(0,this.notes.length);
+                this.isshow=false;
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
