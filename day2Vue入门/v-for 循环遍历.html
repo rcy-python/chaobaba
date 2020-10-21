@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<script src="js/vue.min.js"></script>
 <body>
-$END$
+<div id="rcy">
+<!--    遍历字典时 位置参数分别是 值,键,索引-->
+    <span v-for="(value,key,index) in user">{{value+key+index}}</span>
+<!--遍历列表时,  位置参数分别是值,索引-->
+    <span v-for="(value,index) in arr">{{value+index}}</span>
+</div>
 </body>
+<script>
+    new Vue({
+        el: "#rcy",
+        data: {
+            user: {name: "rcy", age: 23, pwd: "123456"},
+            arr: ["四川", "北京", "山西"],
+            users: [{name: "rcy", age: 13, pwd: "123456"},
+                {name: "fx", age: 23, pwd: "123456"},
+                {name: "lwd", age: 63, pwd: "123456"},
+            ]
+        },
+    })
+</script>
 </html>

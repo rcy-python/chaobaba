@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .blue{
+        border: #228bc1 1px solid;
+    }
+</style>
+<body>
+
+<div id="xxx">
+    <rcy a="blue"></rcy>
+    <rcy2 name="username"></rcy2>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    let rcy = {
+        template:
+            `<div>
+        <div :class="a">这也是rcy的组件</div>{{username}}
+</div>`,
+        props:["a"],
+        data: function () {
+            return{
+                username:"rcy"
+            }
+
+        }
+    }
+    let rcy2={
+        template: `<div>这是从rcy1获取到的username:{{rcy.data().username}}</div>`,
+        props:["name"]
+    }
+
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {},
+        components:{
+            rcy:rcy,
+            rcy2:rcy2
+        }
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<rcy></rcy>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    let rcy={
+        template: `
+          <div>
+          这又是一个组件
+          <br>
+          <span @click="change">这是组件的span, {{username}}</span>
+          </div>
+        `,
+        data:function () {
+            return{
+                username:"rcy666"
+            }
+
+        },
+        methods:{
+            change(){
+                alert("666")
+            }
+        }
+    }
+
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {},
+        components:{
+            rcy:rcy,
+        }
+    })
+</script>
+
+</body>
+</html>

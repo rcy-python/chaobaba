@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+    <p @click="sub_num">{{num}}</p>
+    <p>该数字乘100为{{num*100}}</p>
+    <p>该数字乘1000为{{num*1000}}</p>
+    <p>该数字加100为{{result}}</p>
+    <p>该数字加1000为{{chengs}}</p>
+    <input type="text" :value="result">
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: "#xxx",
+        data: {
+            num:5,
+        },
+        methods: {
+            sub_num(){
+                this.num--;
+            }},
+        computed:{
+            result(){
+                return this.num + 100;
+            },
+            chengs(){
+                return this.num + 1000;
+            },
+        }
+
+
+    })
+</script>
+
+</body>
+</html>

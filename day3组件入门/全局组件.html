@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<rcy>add</rcy>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    let rcy = {
+        template:`<div>rcy的组件</div>`,
+    }
+    Vue.component("rcy",rcy)
+    new Vue({
+        el: "#xxx",
+        data: {},
+    })
+</script>
+
+</body>
+</html>

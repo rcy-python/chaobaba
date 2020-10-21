@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<rcy @btn="change"></rcy>
+    这是父亲显示的:{{nb}}
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    let rcy={
+        template:`<div>rcy的子组件
+<button @cliclk="chang">阿拉拉了</button></div>`,
+        methods: {
+            chang() {
+                this.$emit("btn","rcy666")
+            },
+        }
+    }
+    new Vue({
+        el: "#xxx",
+        data: {
+            nb:"",
+        },
+        methods: {
+            change(nb) {
+                this.nb=nb;
+            },
+        },
+        components:{
+            rcy:rcy
+        }
+    })
+</script>
+
+</body>
+</html>

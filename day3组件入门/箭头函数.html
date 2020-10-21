@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>//返回的是一条语句可以省略{}
+    let app = (a,b,c) => console.log(a+b+c)
+    //返回的是多条语句只可以省略function 不可以省略{}
+    let app2 = (a,b,c) =>{
+        console.log(a);
+        console.log(b);
+    }
+
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {}
+    })
+</script>
+
+</body>
+</html>

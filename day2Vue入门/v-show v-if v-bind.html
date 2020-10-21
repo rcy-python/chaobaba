@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<script src="js/vue.min.js"></script>
 <body>
-$END$
+<style>
+    .aa{
+        border: burlywood solid 5px ;
+    }
+</style>
+<!--`v-show`: 用来控制页面中的某个标签是否展示-->
+<div id="rcy">
+<h3 v-show="false" class="aa">这条标签不展示</h3>
+<h3 v-show="true" :class="{aa:isshow}">这条标签会展示出来 </h3>
+<h3 v-show="isshow" @click="add_">这条标签会展示出来</h3>
+    <h3 v-if="isshow" id="a1">百知教育</h3>
+    <h3 v-else id="a2">欢迎你</h3>
+    <h3 v-else-if="true">加入</h3>
+
+
+</div>
 </body>
+<script>
+    new Vue({
+        el:'#rcy',
+        data:{
+            isshow:true,
+        },
+        methods:{
+            add_(){
+                this.isshow=false
+            }
+        }
+    })
+
+</script>
 </html>

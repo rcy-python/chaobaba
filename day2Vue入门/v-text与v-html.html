@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
 </head>
+
 <body>
-$END$
+<div id="rcy"><span>
+    {{msg}}
+
+</span>
+    <br>
+<span v-text="msg">这里的内容不会显示
+//v-text 与插值表达式都用来获取数据,区别在于text会覆盖原有标签内的值,网络较慢的情况下会避免出现插值闪烁的情况
+</span>
+<span v-html="a"></span></div>
 </body>
+<script>
+    new Vue({
+        el:"#rcy",
+        data:{
+            msg:"这里的内容能看见",
+            a:"<a href=''>这是一个a标签</a>",
+        }
+    })
+
+</script>
 </html>

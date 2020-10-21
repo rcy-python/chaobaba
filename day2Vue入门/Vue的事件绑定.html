@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
 </head>
 <body>
-$END$
+<div id="rcy"><h3>年份{{year}}</h3>
+    <input type="button" value="点击增长年份" @click="add_year">
+    <h3>:{{name+year}}</h3>
+    <input type="button" value="点我" @click="change_add('rcy')">
+</div>
+
+
 </body>
-</html>
+<script>
+    new Vue({
+        el:"#rcy",
+        data:{
+            year:2006,
+            name:"rcy",
+        },
+        methods:{
+            add_year(){
+                this.year++
+            },
+            change_add(name){
+                if(name==="rcy"){
+                    alert("666")
+                }
+            }
+        }
+    })
+</script>
+<!--//v-on:事件名="函数名" 赋值语句就是当前事件要触发的方法-->
+<!--//简写为直接@事件名="函数名"-->
+<!--//在Vue定义的事件中,this代表当前的vue-->
+<!--//函数的标准写法: 函数名:function(){函数体}简化后直接函数名(){}即可-->
+<!--在传递参数时,若传递出参数为空,则可以查看事件,若参数不空且都赋值,则需要在定义参数时加event才能查看该事件-->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+    <span id="span">文本</span>
+<h3 @click="change" id="sp">
+    {{number}}
+</h3>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: "#xxx",
+        data: {
+            number:50,
+        },
+        methods: {
+            change(){
+                this.number--;
+        }
+        },
+        beforeCreate:function () {
+          console.log("beaforeCreate: " +this.number)
+        },
+        created: function (){
+            console.log("created"  + this.number)
+        },
+        beforeMount(){
+            console.log("beforeMount:   "+ document.getElementById("span").innerText)
+        },
+        mounted() {
+            console.log("mounted: " + document.getElementById("span").innerText);
+        },
+        beforeUpdate() {
+            console.log("beforeUpdate: " + this.number)
+            console.log("beforeUpdate: " + document.getElementById("sp").innerText)},
+        updated(){
+            console.log("updated: " + this.number)
+            console.log("updated: " + document.getElementById("sp").innerText)
+        },
+
+    })
+
+</script>
+
+</body>
+</html>

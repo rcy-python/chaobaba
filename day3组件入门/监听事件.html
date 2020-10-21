@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+    <p @click="add_Num">{{num}}</p>
+    <p>这个数乘100位{{num1}}</p>
+    <p>这个数乘1000位{{num2}}</p>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script>
+    new Vue({
+        el: "#xxx",
+        data: {
+            num:"55",
+            num1:"",
+            num2:"",
+        },
+        methods: {
+            add_Num(){
+                this.num++;
+            }
+        },
+        watch:{
+            num(){
+                this.num1 = this.num*100;
+                this.num2 = this.num*1000;
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
