@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<h3>信息管理系统</h3>
+    <br>
+    <router-link to="/xiton">访问系统管理</router-link>
+    <router-link to="/xinxi">访问信息管理</router-link>
+    <router-view></router-view>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+
+    let rcy = {
+        template:`
+        <div>系统管理</div>`
+    }
+     let rcy2 = {
+        template: `<div>信息管理</div>`
+     }
+     let myRouter = new VueRouter({
+         routes:[
+             {path:"/xiton",component:rcy},
+             {path:"/xinxi",component: rcy2},
+         ]
+     })
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {},
+        router:myRouter
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<router-view></router-view>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    let first = {
+        template:`<div>这是第一个组件,点击按钮向第二个组件传参
+<input type="button" value="点击我" @click="change">
+</div>`,
+        methods:{
+            change(){
+                this.$router.push('/second?id=2')
+            }
+        }
+    }
+    let second = {
+        template: `<div>从第一个组件接收到的参数为 {{$route.query.id}}</div>`
+    }
+     let myrouter = new VueRouter({
+         routes:[
+             {path:"/first",component:first},
+             {path:"/second",component:second},
+             {path:"/",redirect:"/first"}
+         ]
+     })
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {},
+        router:myrouter
+    })
+</script>
+
+</body>
+</html>

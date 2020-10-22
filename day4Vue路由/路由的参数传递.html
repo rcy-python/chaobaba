@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="xxx">
+<router-view></router-view>
+</div>
+
+<script src="../day2Vue入门/js/vue.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    let first={
+        template:`<!--<div>这是组件一<router-link to="/second?id=2"></router-link></div>-->
+            <div>这是组件一<router-link to="/second/2">chakan</router-link></div>`
+    }
+    let second={
+        template: `<!--<div>zheshi12 接收到一的参数是{{$route.query.id}}</div>-->
+<div>接收到一的参数是{{$route.params.id}}</div>`
+    }
+
+    let myRout = new VueRouter({
+        routes:[
+            {path:"/first",component:first},
+            // {path:"/second",component: second},
+            {path:"/second/:id",component: second},
+            {path:"/",redirect:"/first"},
+        ]
+    })
+    new Vue({
+        el: "#xxx",
+        data: {},
+        methods: {},
+        router:myRout
+    })
+</script>
+
+</body>
+</html>
