@@ -6,19 +6,19 @@
 </head>
 <body>
 
-<div id="xxx">
-<rcy @btn="change"></rcy>
-    这是父亲显示的:{{nb}}
+<div id="xxx"> 这是父亲显示的:{{nb}}
+<rcy @btn="change1"></rcy>
+
 </div>
 
 <script src="../day2Vue入门/js/vue.min.js"></script>
 <script>
-    let rcy={
-        template:`<div>rcy的子组件
-<button @cliclk="chang">阿拉拉了</button></div>`,
+    let rcy = {
+        template:`<div>rcy的子组件<button @click="chang()">阿拉拉了</button></div>`,
         methods: {
             chang() {
                 this.$emit("btn","rcy666")
+                console.log(1);
             },
         }
     }
@@ -28,8 +28,9 @@
             nb:"",
         },
         methods: {
-            change(nb) {
+            change1(nb) {
                 this.nb=nb;
+                console.log(this.nb);
             },
         },
         components:{
