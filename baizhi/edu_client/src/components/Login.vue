@@ -8,10 +8,10 @@
             </div>
             <div class="login_box">
                 <div class="title">
-                    <span>密码登录</span>
-                    <span><router-link to="/msg_login">短信登录</router-link></span>
+                    <span id="a_span" @click="click_psd" :style=span_style>密码登录</span>
+                    <span id="b_span" @click="click_yzm" :style=span_style2>短信登录</span>
                 </div>
-                <div class="inp">
+                <div class="inp" v-show=this.a>
                     <input type="text" placeholder="用户名 / 手机号码 / 邮箱" class="user" v-model="username" @blur="look_username()">
                     <input type="password" name="" class="pwd" placeholder="密码" v-model="password">
                     <div id="geetest1"></div>
@@ -27,13 +27,15 @@
                         <router-link to="/register">立即注册</router-link>
                     </p>
                 </div>
-                <div class="inp" v-show="">
-                    <input type="text" placeholder="手机号码" class="user">
-                    <input type="text" class="pwd" placeholder="短信验证码">
-                    <button id="get_code" class="btn btn-primary">获取验证码</button>
-                    <button class="login_btn">登录</button>
+                <div class="inp" v-show=this.b>
+                    <input type="text" placeholder="手机号码" class="user" v-model="phone" @blur="check_phone">
+                    <input type="text" class="pwd" placeholder="短信验证码" v-model="code" >
+                    <button v-if="show" class="btn btn-primary" @click="get_code">获取验证码</button>
+                    <button v-if="!show" class="btn btn-primary" >{{ times }}s后再次发送</button>
+
+                    <button class="login_btn" @click="msg_Login">登录</button>
                     <span class="go_login">没有账号
-                    <router-link to="/user/register/">立即注册</router-link>
+                    <router-link to="/register/">立即注册</router-link>
                 </span>
                 </div>
             </div>
@@ -48,11 +50,45 @@ export default {
         return{
             username: "",
             password: "",
+            phone:"",
+            code:'',
             remember_me:false,
             user_status:0,
+            a:true,
+            b:false,
+            u_status:false,
+            times: 60,
+            show:true,
+            span_style:{
+                "color": "#4a4a4a",
+                "border-bottom": "2px solid #84cc39",
+            },
+            span_style2:{},
         }
     },
     methods:{
+        //账号密码登录
+        click_psd(){
+            this.a = true;
+            this.b = false;
+            this.span_style = {
+                "color": "#4a4a4a",
+                "border-bottom": "2px solid #84cc39"
+            };
+            this.span_style2 = {};
+
+        },
+        click_yzm(){
+            this.a = false;
+            this.b = true;
+            this.span_style = {};
+            this.span_style2 = {
+                "color": "#4a4a4a",
+                "border-bottom": "2px solid #84cc39"
+            };
+
+        },
+        //短信登录
         // 获取验证码的方法
         get_captcha() {
             // 验证开始需要向网站主后台获取id，challenge，success（是否启用failback）
@@ -161,7 +197,85 @@ export default {
                 console.log(error);
             })
         },
-    },
+        //短信登录验证手机号
+        check_phone() {
+            this.$axios({
+                url: this.$settings.HOST + "user/phone2/",
+                method: "get",
+                params: {
+                    phone: this.phone,
+                }
+            }).then(res => {
+                this.u_status = true
+            }).catch(error => {
+                this.$message.error(error.response.data)
+            })
+        },
+        get_code() {
+            if(this.u_status){
+                this.show = false
+                this.timer = setInterval(()=>{
+                    this.times--
+                    if(this.times===0){
+                        this.show = true
+                        clearInterval(this.timer)
+                    }
+                },1000)
+
+                this.$axios({
+                    url: this.$settings.HOST + "user/send/",
+                    method: "get",
+                    params: {
+                        phone: this.phone
+                    }
+                }).then(res => {
+                    this.$message.success(res.data)
+                }).catch(error => {
+                    this.$message.error(error.response.data)
+                })
+            }
+            else {
+                alert("您的手机号输入有误")
+            }
+
+        },
+        //短信登录
+        msg_Login(){
+            this.$axios({
+                url: this.$settings.HOST + "user/login2/",
+                method: "post",
+                data: {
+                    phone:this.phone,
+                    code:this.code,
+                }
+            }).then(res => {
+
+                // 登陆时来判断用户是否需要记住密码 remember_me的值为True代表需要记住密码，
+                if (res.data.token) {
+                    // 将token信息保存
+                    sessionStorage.token = res.data.token;
+
+                    this.$message({
+                        message: "恭喜你，登陆成功",
+                        type: "success",
+                        duration: 1000,
+                    })
+                    this.$router.push("/")
+                }
+                if(res.data.message){
+                    this.$message({
+                        message: res.data.message,
+                        type: "error",
+                        duration: 1000,
+                    })
+                }
+            })
+                // 登陆成功后返回到首页
+
+
+
+        }
+    }
 }
 </script>
 
@@ -231,10 +345,6 @@ export default {
     cursor: pointer;
 }
 
-.login_box .title span:nth-of-type(1) {
-    color: #4a4a4a;
-    border-bottom: 2px solid #84cc39;
-}
 
 .inp {
     width: 350px;
@@ -277,7 +387,7 @@ export default {
     /*position: relative;*/
 }
 
-.inp .rember p:nth-of-type(2) {
+.inp .rember p:nth-of-type(1) {
     font-size: 14px;
     color: #9b9b9b;
     letter-spacing: .19px;
@@ -330,5 +440,15 @@ export default {
 .inp .go_login span {
     color: #84cc39;
     cursor: pointer;
+}
+.sms-btn {
+    font-size: 14px;
+    color: #ffc210;
+    letter-spacing: .26px;
+    right: 16px;
+    top: 10px;
+    border-left: 1px solid #484848;
+    padding-left: 16px;
+    padding-bottom: 4px;
 }
 </style>

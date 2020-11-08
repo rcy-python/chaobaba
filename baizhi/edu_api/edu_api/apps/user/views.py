@@ -7,15 +7,18 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status as http_status
 from django_redis import get_redis_connection
+from rest_framework_jwt.settings import api_settings
+
 from edu_api.libs.geetest import GeetestLib
 from edu_api.utils.send_msg import Message
 from user.models import UserInfo
-from user.utils import get_user_by_account
-from user.serializer import UserModelSerializer
+from user.utils import get_user_by_account, jwt_response_payload_handler
+from user.serializer import UserModelSerializer , UserModelSerializer2
 from edu_api.utils import contastnt
 pc_geetest_id = "1ea3ed8b35299a931b6a3883ec4a05be"
 pc_geetest_key = "9a13879615c1ae2500e356417cd5bcf9"
-
+jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
 class CaptchaAPIView(APIView):
     """滑块验证码"""
@@ -119,4 +122,32 @@ class MobieCheckAPIView2(APIView):
         return Response({"message": "Ok"})
 
 #通过短信进行登录:
+class Msg_login(APIView):
+
+    def post(self,request):
+        phone = request.data.get("phone")
+        code = request.data.get("code")
+        if not re.match(r'^1[3-9]\d{9}$', phone):
+            return Response({"message":"手机号码格式错误"})
+
+        try:
+            user = get_user_by_account(phone)
+        except UserInfo.DoesNotExist:
+            return Response({"message":"当前手机号不存在"})
+
+            # TODO 检验密码的格式
+
+            # TODO 校验验证码是否一致
+        redis_connection = get_redis_connection("sms_code")
+        mobile_code = redis_connection.get("mobile_%s" % phone)
+        if mobile_code.decode() != code:
+            # 代表验证码有误
+            # 为了防止暴力破解  可以设置一个手机号只能验证n次  累加
+            return Response({"message":"验证码错误"})
+
+        # 验证通过后将redis的验证码的删除
+        else:
+            payload = jwt_payload_handler(user)
+            token = jwt_encode_handler(payload)
+            return Response(jwt_response_payload_handler(token, user, request))
 

@@ -54,13 +54,17 @@ export default {
                }).then(res => {
                    if (res.data.token) {
                        // 保存用户登陆状态
-
-                       this.$message.success("注册成功，即将跳转到首页")
+                       sessionStorage.token = res.data.token;
+                       this.$message({
+                           message: "恭喜你，登陆成功",
+                           type: "success",
+                           duration: 1000,
+                       })
                        // 跳转到首页
                        this.$router.push("/");
                    }
                }).catch(error => {
-                   this.$message.error(error)
+                   this.$message.error(error.response.data)
                })
            }
            else {

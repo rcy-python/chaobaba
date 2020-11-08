@@ -1411,3 +1411,280 @@ INFO 2020-11-08 16:11:25,794 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
 INFO 2020-11-08 16:15:06,157 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
 INFO 2020-11-08 16:15:06,157 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
 INFO 2020-11-08 16:15:06,157 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 16:49:59,573 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 16:49:59,575 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 16:49:59,575 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 16:49:59,626 basehttp 124 "GET /media/banner/01_ARogmV2.png HTTP/1.1" 304 0
+INFO 2020-11-08 16:49:59,627 basehttp 124 "GET /media/banner/02_BZ7WAxM.png HTTP/1.1" 304 0
+INFO 2020-11-08 16:49:59,628 basehttp 124 "GET /media/banner/03.png HTTP/1.1" 304 0
+WARNING 2020-11-08 16:50:20,705 basehttp 124 "GET /user/phone/?phone=176351 HTTP/1.1" 400 38
+WARNING 2020-11-08 17:25:22,393 base 93 Not Found: /
+WARNING 2020-11-08 17:25:22,394 basehttp 124 "GET / HTTP/1.1" 404 2257
+WARNING 2020-11-08 17:25:22,479 base 93 Not Found: /favicon.ico
+WARNING 2020-11-08 17:25:22,480 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2308
+INFO 2020-11-08 17:25:26,858 basehttp 124 "GET /admin/ HTTP/1.1" 200 4366
+INFO 2020-11-08 17:25:26,880 basehttp 124 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,897 basehttp 124 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,899 basehttp 124 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,900 basehttp 124 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,900 basehttp 124 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,902 basehttp 124 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,903 basehttp 124 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,906 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,919 basehttp 124 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,920 basehttp 124 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,920 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,920 basehttp 124 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,921 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,938 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,938 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,939 basehttp 124 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:26,943 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 4373
+INFO 2020-11-08 17:25:27,043 basehttp 124 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:39,929 basehttp 124 "POST /admin/ HTTP/1.1" 302 0
+INFO 2020-11-08 17:25:40,054 basehttp 124 "GET /admin/ HTTP/1.1" 200 15507
+INFO 2020-11-08 17:25:40,089 basehttp 124 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:40,090 basehttp 124 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:40,091 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:40,102 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 17:25:43,045 basehttp 124 "GET /admin/user/userinfo/ HTTP/1.1" 200 37958
+INFO 2020-11-08 17:25:43,091 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,092 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,099 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,100 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 17:25:43,100 basehttp 124 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,101 basehttp 124 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,107 basehttp 124 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:43,107 basehttp 124 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2020-11-08 17:25:46,928 basehttp 124 "POST /admin/user/userinfo/ HTTP/1.1" 200 15791
+INFO 2020-11-08 17:25:46,957 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 17:25:47,797 basehttp 124 "POST /admin/user/userinfo/ HTTP/1.1" 302 0
+INFO 2020-11-08 17:25:47,878 basehttp 124 "GET /admin/user/userinfo/ HTTP/1.1" 200 35619
+INFO 2020-11-08 17:25:47,913 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 17:26:04,873 basehttp 124 "GET /user/phone/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 17:26:09,050 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+WARNING 2020-11-08 19:18:25,433 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:26,924 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:27,974 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:28,958 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:29,795 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:30,697 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+WARNING 2020-11-08 19:18:51,462 basehttp 124 "GET /user/phone2/?phone=17635148484 HTTP/1.1" 400 32
+WARNING 2020-11-08 19:18:57,838 basehttp 124 "GET /user/phone2/?phone= HTTP/1.1" 400 38
+WARNING 2020-11-08 19:19:04,418 basehttp 124 "GET /user/phone2/?phone= HTTP/1.1" 400 38
+WARNING 2020-11-08 19:19:05,634 basehttp 124 "GET /user/phone2/?phone= HTTP/1.1" 400 38
+WARNING 2020-11-08 19:19:14,188 basehttp 124 "GET /user/phone2/?phone=17635146679 HTTP/1.1" 400 32
+WARNING 2020-11-08 19:19:20,550 basehttp 124 "GET /user/phone2/?phone=17635146679 HTTP/1.1" 400 32
+WARNING 2020-11-08 19:19:21,991 basehttp 124 "GET /user/phone2/?phone=17635146679 HTTP/1.1" 400 32
+WARNING 2020-11-08 19:19:26,366 basehttp 124 "GET /user/phone2/?phone=17635146679 HTTP/1.1" 400 32
+INFO 2020-11-08 19:19:36,585 basehttp 124 "GET /admin/ HTTP/1.1" 200 15507
+INFO 2020-11-08 19:19:36,652 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 19:19:38,952 basehttp 124 "GET /admin/user/userinfo/ HTTP/1.1" 200 35394
+INFO 2020-11-08 19:19:38,989 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 19:22:50,713 basehttp 124 "GET /user/phone/?phone=17635190990 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:22:54,993 basehttp 124 "GET /user/send/?phone=17635190990 HTTP/1.1" 500 35
+INFO 2020-11-08 19:23:11,677 basehttp 124 "GET /user/phone/?phone=17635146678 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:23:13,875 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 500 35
+INFO 2020-11-08 19:24:01,371 basehttp 124 "GET /user/phone/?phone=17635146679 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:24:01,438 basehttp 124 "GET /user/send/?phone=17635146679 HTTP/1.1" 500 35
+INFO 2020-11-08 19:24:12,648 basehttp 124 "GET /user/phone/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 19:24:19,267 basehttp 124 "GET /user/phone/?phone=17635194986 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:24:19,357 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 500 35
+INFO 2020-11-08 19:24:47,446 basehttp 124 "GET /user/phone/?phone=15834026418 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:24:49,866 basehttp 124 "GET /user/send/?phone=15834026418 HTTP/1.1" 500 35
+WARNING 2020-11-08 19:37:26,387 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 400 32
+INFO 2020-11-08 19:37:32,720 basehttp 124 "GET /user/phone/?phone=17635194986 HTTP/1.1" 200 16
+ERROR 2020-11-08 19:37:35,057 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 500 35
+INFO 2020-11-08 19:50:33,117 basehttp 124 "GET /user/phone/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 19:50:34,426 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+INFO 2020-11-08 19:51:10,096 basehttp 124 "OPTIONS /user/register/ HTTP/1.1" 200 0
+INFO 2020-11-08 19:51:10,210 basehttp 124 "POST /user/register/ HTTP/1.1" 201 213
+INFO 2020-11-08 19:51:10,267 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 19:51:10,268 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 19:51:10,270 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 20:02:45,801 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 20:02:47,444 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:07:14,484 basehttp 124 "GET /user/phone2/?phone=18723267737 HTTP/1.1" 400 32
+WARNING 2020-11-08 20:07:21,794 basehttp 124 "GET /user/phone2/?phone=1 HTTP/1.1" 400 38
+INFO 2020-11-08 20:07:39,687 basehttp 124 "GET /user/phone/?phone=17635146678 HTTP/1.1" 200 16
+INFO 2020-11-08 20:07:40,341 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 200 32
+INFO 2020-11-08 20:08:06,205 basehttp 124 "POST /user/register/ HTTP/1.1" 201 213
+INFO 2020-11-08 20:08:06,263 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 20:08:06,263 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 20:08:06,267 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 20:08:19,944 basehttp 124 "GET /user/phone2/?phone=17635146678 HTTP/1.1" 200 16
+WARNING 2020-11-08 20:08:20,020 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 400 50
+WARNING 2020-11-08 20:08:35,476 basehttp 124 "GET /user/phone2/?phone=17635146679 HTTP/1.1" 400 32
+INFO 2020-11-08 20:08:57,091 basehttp 124 "GET /admin/ HTTP/1.1" 200 15507
+INFO 2020-11-08 20:08:57,236 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+WARNING 2020-11-08 20:08:57,461 base 93 Not Found: /favicon.ico
+WARNING 2020-11-08 20:08:57,461 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2308
+INFO 2020-11-08 20:08:59,998 basehttp 124 "GET /admin/user/userinfo/ HTTP/1.1" 200 40518
+INFO 2020-11-08 20:09:00,067 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7716
+INFO 2020-11-08 20:09:09,420 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 20:09:11,516 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:09:30,932 basehttp 124 "GET /user/login2/?phone=17635194986&code=668676 HTTP/1.1" 405 40
+INFO 2020-11-08 20:11:32,435 basehttp 124 "GET /user/phone2/?phone=17635146678 HTTP/1.1" 200 16
+INFO 2020-11-08 20:11:33,191 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 200 32
+INFO 2020-11-08 20:11:48,718 basehttp 124 "OPTIONS /user/login2/ HTTP/1.1" 200 0
+WARNING 2020-11-08 20:11:48,730 basehttp 124 "GET /user/login2/ HTTP/1.1" 405 40
+INFO 2020-11-08 20:13:36,552 basehttp 124 "GET /user/phone2/?phone=17635146678 HTTP/1.1" 200 16
+INFO 2020-11-08 20:13:50,057 basehttp 124 "GET /user/phone2/?phone=17635146678 HTTP/1.1" 200 16
+INFO 2020-11-08 20:13:50,695 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:14:04,744 basehttp 124 "POST /user/login2/ HTTP/1.1" 405 41
+ERROR 2020-11-08 20:14:08,539 exception 118 Internal Server Error: /user/login2/
+Traceback (most recent call last):
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2020-11-08 20:14:08,682 basehttp 124 "GET /user/login2/ HTTP/1.1" 500 91915
+ERROR 2020-11-08 20:14:16,310 exception 118 Internal Server Error: /user/send/
+Traceback (most recent call last):
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2020-11-08 20:14:16,357 basehttp 124 "GET /user/send/?phone=17635146678 HTTP/1.1" 500 92316
+INFO 2020-11-08 20:16:37,685 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 20:16:38,950 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:16:53,406 basehttp 124 "POST /user/login2/ HTTP/1.1" 405 41
+INFO 2020-11-08 20:17:39,356 basehttp 124 "GET /user/phone/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 20:18:20,853 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+INFO 2020-11-08 20:18:48,860 basehttp 124 "POST /user/register/ HTTP/1.1" 201 213
+INFO 2020-11-08 20:18:48,917 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 20:18:48,928 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 20:18:48,938 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 20:19:01,404 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 20:20:27,952 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:20:44,043 basehttp 124 "POST /user/login2/ HTTP/1.1" 405 41
+INFO 2020-11-08 20:36:29,698 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 20:36:31,030 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:36:41,209 basehttp 124 "POST /user/login2/ HTTP/1.1" 405 41
+ERROR 2020-11-08 20:42:31,357 exception 118 Internal Server Error: /user/login2/
+Traceback (most recent call last):
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    template = loader.get_template(self.template)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2020-11-08 20:42:31,393 basehttp 124 "GET /user/login2/ HTTP/1.1" 500 91915
+INFO 2020-11-08 20:44:15,230 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 20:44:16,512 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+WARNING 2020-11-08 20:44:29,979 basehttp 124 "POST /user/login2/ HTTP/1.1" 405 41
+INFO 2020-11-08 20:47:28,688 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 20:47:29,909 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+ERROR 2020-11-08 20:47:39,810 exception 118 Internal Server Error: /user/login2/
+Traceback (most recent call last):
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\views.py", line 499, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\shixun\02 python web\Django-Virtual-Env\Test\lib\site-packages\rest_framework\views.py", line 414, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2020-11-08 20:47:39,882 basehttp 124 "POST /user/login2/ HTTP/1.1" 500 87334
+INFO 2020-11-08 20:59:31,595 basehttp 124 "GET /user/phone/?phone=17635194984 HTTP/1.1" 200 16
+INFO 2020-11-08 20:59:32,799 basehttp 124 "GET /user/send/?phone=17635194984 HTTP/1.1" 200 32
+INFO 2020-11-08 20:59:49,160 basehttp 124 "POST /user/register/ HTTP/1.1" 201 213
+INFO 2020-11-08 20:59:49,236 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 20:59:49,251 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 20:59:49,251 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:01:27,994 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:01:28,032 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:01:28,036 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:01:44,428 basehttp 124 "GET /user/phone2/?phone=17635194984 HTTP/1.1" 200 16
+INFO 2020-11-08 21:01:47,993 basehttp 124 "GET /user/phone2/?phone=17635194984 HTTP/1.1" 200 16
+INFO 2020-11-08 21:01:48,927 basehttp 124 "GET /user/send/?phone=17635194984 HTTP/1.1" 200 32
+INFO 2020-11-08 21:01:58,643 basehttp 124 "POST /user/login2/ HTTP/1.1" 200 214
+INFO 2020-11-08 21:01:58,713 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:01:58,722 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:01:58,722 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:02:10,650 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:02:10,656 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:02:10,669 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:02:17,408 basehttp 124 "GET /user/phone2/?phone=17635194984 HTTP/1.1" 200 16
+WARNING 2020-11-08 21:02:19,478 basehttp 124 "GET /user/send/?phone=17635194984 HTTP/1.1" 400 50
+INFO 2020-11-08 21:02:29,998 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 21:02:30,587 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+INFO 2020-11-08 21:02:41,770 basehttp 124 "POST /user/login2/ HTTP/1.1" 200 214
+INFO 2020-11-08 21:02:41,831 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:02:41,851 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:02:41,853 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:02:46,196 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:02:46,200 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:02:46,201 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:32:35,624 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:32:35,625 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:32:35,626 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+WARNING 2020-11-08 21:40:24,291 basehttp 124 "GET /user/phone2/?phone= HTTP/1.1" 400 38
+WARNING 2020-11-08 21:40:26,696 basehttp 124 "GET /user/phone2/?phone= HTTP/1.1" 400 38
+INFO 2020-11-08 21:40:35,846 basehttp 124 "GET /user/phone2/?phone=17635194986 HTTP/1.1" 200 16
+INFO 2020-11-08 21:40:36,483 basehttp 124 "GET /user/send/?phone=17635194986 HTTP/1.1" 200 32
+INFO 2020-11-08 21:40:47,896 basehttp 124 "OPTIONS /user/login2/ HTTP/1.1" 200 0
+INFO 2020-11-08 21:40:47,906 basehttp 124 "POST /user/login2/ HTTP/1.1" 200 32
+INFO 2020-11-08 21:40:47,960 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:40:47,967 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:40:47,967 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:40:53,047 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:40:53,051 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:40:53,052 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:41:03,149 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 21:41:03,736 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+INFO 2020-11-08 21:41:19,792 basehttp 124 "POST /user/login2/ HTTP/1.1" 200 32
+INFO 2020-11-08 21:41:19,831 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:41:19,836 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:41:19,841 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:41:23,582 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:41:23,582 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:41:23,588 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
+INFO 2020-11-08 21:47:08,835 basehttp 124 "GET /user/phone2/?phone=17635194985 HTTP/1.1" 200 16
+INFO 2020-11-08 21:47:09,777 basehttp 124 "GET /user/send/?phone=17635194985 HTTP/1.1" 200 32
+INFO 2020-11-08 21:47:20,654 basehttp 124 "POST /user/login2/ HTTP/1.1" 200 32
+INFO 2020-11-08 21:55:35,777 basehttp 124 "GET /user/phone/?phone=17635194980 HTTP/1.1" 200 16
+INFO 2020-11-08 21:55:37,851 basehttp 124 "GET /user/send/?phone=17635194980 HTTP/1.1" 200 32
+INFO 2020-11-08 21:55:49,912 basehttp 124 "OPTIONS /user/register/ HTTP/1.1" 200 0
+INFO 2020-11-08 21:55:50,024 basehttp 124 "POST /user/register/ HTTP/1.1" 201 213
+INFO 2020-11-08 21:55:50,070 basehttp 124 "GET /home/header/ HTTP/1.1" 200 217
+INFO 2020-11-08 21:55:50,070 basehttp 124 "GET /home/banner/ HTTP/1.1" 200 293
+INFO 2020-11-08 21:55:50,072 basehttp 124 "GET /home/footer/ HTTP/1.1" 200 208
