@@ -9,7 +9,7 @@
             <div class="login_box">
                 <div class="title">
                     <span>密码登录</span>
-                    <span>短信登录</span>
+                    <span><router-link to="/msg_login">短信登录</router-link></span>
                 </div>
                 <div class="inp">
                     <input type="text" placeholder="用户名 / 手机号码 / 邮箱" class="user" v-model="username" @blur="look_username()">
@@ -24,7 +24,7 @@
                     </div>
                     <button class="login_btn btn btn-primary" @click="get_captcha">登录</button>
                     <p class="go_login">没有账号
-                        <router-link to="/user/register/">立即注册</router-link>
+                        <router-link to="/register">立即注册</router-link>
                     </p>
                 </div>
                 <div class="inp" v-show="">
