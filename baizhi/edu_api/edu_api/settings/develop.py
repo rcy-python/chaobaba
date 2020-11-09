@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'reversion',
     'user',
-
+    'course',
     'home',
 ]
 

@@ -7,7 +7,7 @@
                 </div>
                 <ul class="nav full-left">
                     <li v-for="(nav, index) in nav_list" :key="index">
-                        <span><a :href="nav.link">{{ nav.title }}</a></span>
+                        <span><router-link to="/course">{{ nav.title }}</router-link></span>
                     </li>
                 </ul>
                 <!--       用户登陆     -->
